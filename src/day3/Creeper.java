@@ -10,6 +10,6 @@ public static void main(String[] args) {
 	JOptionPane.showMessageDialog(null, "I know you live at:" + Me);
 	String elijah = JOptionPane.showInputDialog(null, "How old are you?");
     JOptionPane.showMessageDialog(null, "And now I know your "+elijah +you);
-    eat strafe
+
 }
 }
