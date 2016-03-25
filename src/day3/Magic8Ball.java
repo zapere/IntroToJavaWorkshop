@@ -10,27 +10,18 @@ public class Magic8Ball {
 	public static void main(String[] args) {
 
 		int random = new Random().nextInt(4);
-
-		JOptionPane.showMessageDialog(null, "" + random);
-		JOptionPane.showInputDialog("Enter a question");
-		// 5. If the random number is 0
-		if (random==(0)) {
-
-		} else {
-
+		String answer = JOptionPane.showInputDialog("Enter a question");
+		if (answer.contains("rich")) {
+			JOptionPane.showMessageDialog(null, "have fun with that!");
+		} else if (random == (0)) {
+			JOptionPane.showMessageDialog(null, "yes");
+		} else if (random == (1)) {
+			JOptionPane.showMessageDialog(null, "no");
+		} else if (random == (2)) {
+			JOptionPane.showMessageDialog(null, "maybe you should ask google! xD");
+		} else if (random == (3)) {
+			JOptionPane.showInputDialog("write your own answer");
 		}
-		// -- tell the user "Yes"
 
-		// 6. If the random number is 1
-
-		// -- tell the user "No"
-
-		// 7. If the random number is 2
-
-		// -- tell the user "Maybe you should ask Google?"
-
-		// 8. If the random number is 3
-
-		// -- write your own answer
 	}
 }
